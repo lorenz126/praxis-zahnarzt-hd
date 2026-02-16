@@ -1,0 +1,305 @@
+export default function Datenschutz() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-white/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+          <h1 className="text-4xl font-medium text-charcoal max-w-5xl">
+            Datenschutzerklärung
+          </h1>
+        </div>
+      </section>
+
+      {/* Privacy Content */}
+      <section className="bg-white/55 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 py-14 sm:py-20">
+          <div className="prose prose-stone max-w-none">
+            {/* Introduction */}
+            <div className="mb-8">
+              <p className="text-stone leading-relaxed">
+                Wir freuen uns über Ihr Interesse an unserer Praxis. Der Schutz
+                Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend
+                informieren wir Sie ausführlich über den Umgang mit Ihren Daten.
+              </p>
+            </div>
+
+            {/* Responsible Party */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                1. Verantwortlicher
+              </h2>
+              <div className="text-stone space-y-1">
+                <p>Verantwortlich für die Datenverarbeitung ist:</p>
+                <p className="font-medium text-charcoal mt-2">
+                  Dr. med. dent. Christine Herrmann-Flechtenmacher
+                </p>
+                <p>Franz-Knauff-Straße 2-4</p>
+                <p>69115 Heidelberg</p>
+                <p>
+                  E-Mail:{" "}
+                  <a
+                    href="mailto:info@heidelberg-zahnmedizin.de"
+                    className="text-primary hover:underline"
+                  >
+                    info@heidelberg-zahnmedizin.de
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Data Collection */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                2. Erhebung und Speicherung personenbezogener Daten
+              </h2>
+              <div className="text-stone space-y-4">
+                <div>
+                  <h3 className="font-medium text-charcoal mb-2">
+                    2.1 Beim Besuch der Website
+                  </h3>
+                  <p className="text-sm leading-relaxed">
+                    Beim Aufrufen unserer Website werden durch den auf Ihrem
+                    Endgerät zum Einsatz kommenden Browser automatisch
+                    Informationen an den Server unserer Website gesendet. Diese
+                    Informationen werden temporär in einem sogenannten Logfile
+                    gespeichert. Folgende Informationen werden dabei ohne Ihr
+                    Zutun erfasst und bis zur automatisierten Löschung
+                    gespeichert:
+                  </p>
+                  <ul className="text-sm leading-relaxed list-disc list-inside mt-2 space-y-1">
+                    <li>IP-Adresse des anfragenden Rechners</li>
+                    <li>Datum und Uhrzeit des Zugriffs</li>
+                    <li>Name und URL der abgerufenen Datei</li>
+                    <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+                    <li>
+                      Verwendeter Browser und ggf. das Betriebssystem Ihres
+                      Rechners sowie der Name Ihres Access-Providers
+                    </li>
+                  </ul>
+                  <p className="text-sm leading-relaxed mt-2">
+                    Die genannten Daten werden durch uns zu folgenden Zwecken
+                    verarbeitet: Gewährleistung eines reibungslosen
+                    Verbindungsaufbaus der Website, Gewährleistung einer
+                    komfortablen Nutzung unserer Website, Auswertung der
+                    Systemsicherheit und -stabilität sowie zu weiteren
+                    administrativen Zwecken.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-medium text-charcoal mb-2">
+                    2.2 Bei Nutzung unseres Kontaktformulars
+                  </h3>
+                  <p className="text-sm leading-relaxed">
+                    Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit,
+                    mit uns über ein auf der Website bereitgestelltes Formular
+                    Kontakt aufzunehmen. Dabei sind die Angabe einer gültigen
+                    E-Mail-Adresse und Ihres Namens erforderlich, damit wir
+                    wissen, von wem die Anfrage stammt und um diese beantworten
+                    zu können. Weitere Angaben können freiwillig getätigt werden.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-medium text-charcoal mb-2">
+                    2.3 Patientendaten
+                  </h3>
+                  <p className="text-sm leading-relaxed">
+                    Im Rahmen der zahnärztlichen Behandlung erheben und
+                    verarbeiten wir Gesundheitsdaten. Diese unterliegen
+                    besonderen gesetzlichen Schutzbestimmungen und werden
+                    ausschließlich zum Zweck Ihrer medizinischen Versorgung
+                    verwendet. Die Rechtsgrundlage hierfür ergibt sich aus Art. 9
+                    Abs. 2 lit. h DSGVO i.V.m. § 22 Abs. 1 Nr. 1 lit. b BDSG.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Data Usage */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                3. Weitergabe von Daten
+              </h2>
+              <div className="text-stone text-sm leading-relaxed">
+                <p>
+                  Eine Übermittlung Ihrer persönlichen Daten an Dritte zu
+                  anderen als den im Folgenden aufgeführten Zwecken findet nicht
+                  statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter,
+                  wenn:
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>
+                    Sie Ihre nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche
+                    Einwilligung dazu erteilt haben
+                  </li>
+                  <li>
+                    die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur
+                    Geltendmachung, Ausübung oder Verteidigung von
+                    Rechtsansprüchen erforderlich ist
+                  </li>
+                  <li>
+                    die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. c DSGVO zur
+                    Erfüllung einer rechtlichen Verpflichtung erforderlich ist
+                  </li>
+                  <li>
+                    dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b
+                    DSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen
+                    erforderlich ist (z.B. Dentallabor, Krankenkassen)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Cookies */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                4. Cookies
+              </h2>
+              <div className="text-stone text-sm leading-relaxed">
+                <p>
+                  Unsere Website verwendet Cookies. Bei Cookies handelt es sich
+                  um Textdateien, die im Internetbrowser bzw. vom
+                  Internetbrowser auf dem Computersystem des Nutzers gespeichert
+                  werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie
+                  auf dem Betriebssystem des Nutzers gespeichert werden. Dieser
+                  Cookie enthält eine charakteristische Zeichenfolge, die eine
+                  eindeutige Identifizierung des Browsers beim erneuten Aufrufen
+                  der Website ermöglicht.
+                </p>
+                <p className="mt-2">
+                  Wir setzen Cookies ein, um unsere Website
+                  nutzerfreundlicher zu gestalten. Einige Elemente unserer
+                  Internetseite erfordern es, dass der aufrufende Browser auch
+                  nach einem Seitenwechsel identifiziert werden kann. Die
+                  meisten Browser akzeptieren Cookies automatisch. Sie können
+                  Ihren Browser jedoch so konfigurieren, dass keine Cookies auf
+                  Ihrem Computer gespeichert werden oder stets ein Hinweis
+                  erscheint, bevor ein neuer Cookie angelegt wird.
+                </p>
+              </div>
+            </div>
+
+            {/* User Rights */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                5. Ihre Rechte als Betroffener
+              </h2>
+              <div className="text-stone text-sm leading-relaxed space-y-3">
+                <p>Sie haben folgende Rechte:</p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>
+                    <strong>Auskunftsrecht (Art. 15 DSGVO):</strong> Sie haben
+                    das Recht, Auskunft über Ihre von uns verarbeiteten
+                    personenbezogenen Daten zu verlangen.
+                  </li>
+                  <li>
+                    <strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Sie
+                    haben das Recht, unverzüglich die Berichtigung unrichtiger
+                    oder Vervollständigung Ihrer bei uns gespeicherten
+                    personenbezogenen Daten zu verlangen.
+                  </li>
+                  <li>
+                    <strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Sie
+                    haben das Recht, die Löschung Ihrer bei uns gespeicherten
+                    personenbezogenen Daten zu verlangen, soweit nicht die
+                    Verarbeitung zur Ausübung des Rechts auf freie
+                    Meinungsäußerung, zur Erfüllung einer rechtlichen
+                    Verpflichtung oder zur Geltendmachung von Rechtsansprüchen
+                    erforderlich ist.
+                  </li>
+                  <li>
+                    <strong>
+                      Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO):
+                    </strong>{" "}
+                    Sie haben das Recht, die Einschränkung der Verarbeitung
+                    Ihrer personenbezogenen Daten zu verlangen.
+                  </li>
+                  <li>
+                    <strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO):</strong>{" "}
+                    Sie haben das Recht, Ihre personenbezogenen Daten in einem
+                    strukturierten, gängigen und maschinenlesbaren Format zu
+                    erhalten.
+                  </li>
+                  <li>
+                    <strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Sie
+                    haben das Recht, aus Gründen, die sich aus Ihrer besonderen
+                    Situation ergeben, jederzeit gegen die Verarbeitung Sie
+                    betreffender personenbezogener Daten Widerspruch einzulegen.
+                  </li>
+                  <li>
+                    <strong>
+                      Recht auf Widerruf der Einwilligung (Art. 7 Abs. 3 DSGVO):
+                    </strong>{" "}
+                    Sie haben das Recht, Ihre erteilte Einwilligung jederzeit zu
+                    widerrufen.
+                  </li>
+                  <li>
+                    <strong>Beschwerderecht (Art. 77 DSGVO):</strong> Sie haben
+                    das Recht, sich bei einer Aufsichtsbehörde zu beschweren.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Data Retention */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                6. Dauer der Datenspeicherung
+              </h2>
+              <div className="text-stone text-sm leading-relaxed">
+                <p>
+                  Die Daten werden gelöscht, sobald sie für die Erreichung des
+                  Zweckes ihrer Erhebung nicht mehr erforderlich sind. Dies ist
+                  für die personenbezogenen Daten der Fall, wenn die jeweilige
+                  Sitzung beendet ist. Patientendaten unterliegen gesetzlichen
+                  Aufbewahrungsfristen (in der Regel 10 Jahre ab Abschluss der
+                  Behandlung).
+                </p>
+              </div>
+            </div>
+
+            {/* Data Security */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                7. Datensicherheit
+              </h2>
+              <div className="text-stone text-sm leading-relaxed">
+                <p>
+                  Wir verwenden innerhalb des Website-Besuchs das verbreitete
+                  SSL-Verfahren (Secure Socket Layer) in Verbindung mit der
+                  jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser
+                  unterstützt wird. Wir bedienen uns im Übrigen geeigneter
+                  technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre
+                  Daten gegen zufällige oder vorsätzliche Manipulationen,
+                  teilweisen oder vollständigen Verlust, Zerstörung oder gegen
+                  den unbefugten Zugriff Dritter zu schützen. Unsere
+                  Sicherheitsmaßnahmen werden entsprechend der technologischen
+                  Entwicklung fortlaufend verbessert.
+                </p>
+              </div>
+            </div>
+
+            {/* Updates */}
+            <div className="mb-8">
+              <h2 className="text-2xl font-medium text-charcoal mb-4">
+                8. Aktualität und Änderung dieser Datenschutzerklärung
+              </h2>
+              <div className="text-stone text-sm leading-relaxed">
+                <p>
+                  Diese Datenschutzerklärung ist aktuell gültig und hat den
+                  Stand Februar 2026. Durch die Weiterentwicklung unserer Website
+                  und Angebote darüber oder aufgrund geänderter gesetzlicher
+                  beziehungsweise behördlicher Vorgaben kann es notwendig werden,
+                  diese Datenschutzerklärung zu ändern. Die jeweils aktuelle
+                  Datenschutzerklärung kann jederzeit auf der Website unter
+                  „Datenschutz" von Ihnen abgerufen und ausgedruckt werden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -1,0 +1,142 @@
+{
+  "hub": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Modernste Zahnmedizin mit persönlicher Betreuung - entdecken Sie unser umfassendes Leistungsspektrum für Ihre Zahngesundheit.",
+    "cta": {
+      "title": "Noch Fragen zu unseren Leistungen?",
+      "subtitle": "Vereinbaren Sie einen Termin für eine persönliche Beratung. Wir nehmen uns Zeit für Sie und Ihre Zahngesundheit.",
+      "bookButton": "Online Termin buchen",
+      "contactButton": "Kontakt aufnehmen"
+    },
+    "learnMore": "Mehr erfahren"
+  },
+  "cards": [
+    {
+      "id": "prevention",
+      "title": "Prophylaxe & Vorsorge",
+      "category": "Prävention",
+      "description": "Professionelle Zahnreinigung und Vorsorge"
+    },
+    {
+      "id": "fillings",
+      "title": "Füllungen",
+      "category": "Zahnerhaltung",
+      "description": "Biokompatible Materialien für langlebige Füllungen"
+    },
+    {
+      "id": "prosthodontics",
+      "title": "Zahnersatz",
+      "category": "Prothetik",
+      "description": "Kronen, Brücken, Veneers und Prothesen"
+    },
+    {
+      "id": "endodontics",
+      "title": "Wurzelbehandlung",
+      "category": "Endodontie",
+      "description": "Schonende Wurzelkanalbehandlung"
+    },
+    {
+      "id": "periodontology",
+      "title": "Parodontologie",
+      "category": "Zahnfleischbehandlung",
+      "description": "Behandlung von Zahnfleischerkrankungen"
+    },
+    {
+      "id": "implantology",
+      "title": "Implantologie",
+      "category": "Zahnimplantate",
+      "description": "3D-geführte Implantologie"
+    },
+    {
+      "id": "pediatric",
+      "title": "Kinderzahnheilkunde",
+      "category": "Kinder",
+      "description": "Kinderfreundliche Zahnbehandlung"
+    },
+    {
+      "id": "aesthetics",
+      "title": "Zahnästhetik",
+      "category": "Ästhetik",
+      "description": "Bleaching und kosmetische Zahnbehandlung"
+    },
+    {
+      "id": "functional",
+      "title": "Funktionsdiagnostik",
+      "category": "CMD-Therapie",
+      "description": "Aufbissschienen und Kiefergelenkstherapie"
+    }
+  ],
+  "prevention": {
+    "hero": {
+      "title": "Prophylaxe & Vorsorge",
+      "subtitle": "Vorbeugen ist besser als Heilen - mit professioneller Prophylaxe halten Sie Ihre Zähne ein Leben lang gesund.",
+      "backButton": "Zurück zu Leistungen"
+    },
+    "benefitsTitle": "Unsere Prophylaxe-Leistungen",
+    "benefits": [
+      {
+        "title": "Professionelle Zahnreinigung",
+        "description": "Entfernung von Zahnstein und Verfärbungen für gesunde, saubere Zähne"
+      },
+      {
+        "title": "Schwangerschaftsprophylaxe",
+        "description": "Spezielle Vorsorge für werdende Mütter zur Vermeidung von Schwangerschaftsgingivitis"
+      },
+      {
+        "title": "Schmelzhärtung",
+        "description": "Fluoridierung zur Stärkung des Zahnschmelzes und Kariesprävention"
+      },
+      {
+        "title": "Speicheltest",
+        "description": "Analyse Ihres individuellen Kariesrisikos für maßgeschneiderte Prophylaxe"
+      }
+    ],
+    "processTitle": "Ablauf der Prophylaxe",
+    "process": [
+      {
+        "step": "1",
+        "title": "Eingangsuntersuchung",
+        "description": "Umfassende Untersuchung Ihrer Zähne und des Zahnfleisches"
+      },
+      {
+        "step": "2",
+        "title": "Professionelle Reinigung",
+        "description": "Schonende Entfernung von Zahnstein, Belägen und Verfärbungen"
+      },
+      {
+        "step": "3",
+        "title": "Politur & Fluoridierung",
+        "description": "Glättung der Zahnoberflächen und Schmelzhärtung"
+      },
+      {
+        "step": "4",
+        "title": "Beratung",
+        "description": "Individuelle Tipps für Ihre häusliche Mundhygiene und Ernährung"
+      }
+    ],
+    "faqsTitle": "Häufige Fragen",
+    "faqs": [
+      {
+        "question": "Wie oft sollte ich zur professionellen Zahnreinigung?",
+        "answer": "Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate. Bei erhöhtem Kariesrisiko oder Parodontitis kann eine häufigere Prophylaxe sinnvoll sein."
+      },
+      {
+        "question": "Übernimmt die Krankenkasse die Kosten?",
+        "answer": "Viele gesetzliche Krankenkassen bezuschussen die professionelle Zahnreinigung. Private Versicherungen übernehmen die Kosten oft vollständig. Wir beraten Sie gerne zu den Möglichkeiten."
+      },
+      {
+        "question": "Ist die Behandlung schmerzhaft?",
+        "answer": "Die professionelle Zahnreinigung ist in der Regel schmerzfrei. Bei empfindlichen Zähnen oder freiliegenden Zahnhälsen kann eine lokale Betäubung eingesetzt werden."
+      },
+      {
+        "question": "Was ist eine Schwangerschaftsprophylaxe?",
+        "answer": "Während der Schwangerschaft erhöht sich durch Hormonveränderungen das Risiko für Zahnfleischentzündungen. Unsere spezielle Schwangerschaftsprophylaxe beugt dem vor und schützt Mutter und Kind."
+      }
+    ],
+    "cta": {
+      "title": "Jetzt Prophylaxe-Termin vereinbaren",
+      "subtitle": "Investieren Sie in Ihre Zahngesundheit - vereinbaren Sie noch heute einen Termin für Ihre professionelle Zahnreinigung.",
+      "button": "Online Termin buchen"
+    }
+  }
+}

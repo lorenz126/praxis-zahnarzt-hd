@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "title": "Unsere Praxis",
+    "subtitle": "Moderne Zahnmedizin mit persönlicher Note - lernen Sie unser Team und unsere Praxis kennen."
+  },
+  "philosophy": {
+    "title": "Unsere Philosophie",
+    "paragraphs": [
+      "In unserer Zahnarztpraxis verbinden wir modernste Technologie mit persönlicher, einfühlsamer Betreuung. Seit über 25 Jahren sind wir Ihre Ansprechpartner für ganzheitliche Zahngesundheit in Heidelberg.",
+      "Unser Ziel ist es, Ihre natürlichen Zähne so lange wie möglich zu erhalten. Durch präventive Maßnahmen, minimalinvasive Behandlungsmethoden und regelmäßige Weiterbildung unseres Teams bieten wir Ihnen Zahnmedizin auf höchstem Niveau.",
+      "Wir nehmen uns Zeit für Sie - für eine ausführliche Beratung, eine schonende Behandlung und Ihre individuellen Bedürfnisse."
+    ]
+  },
+  "team": {
+    "title": "Unser Team",
+    "members": [
+      {
+        "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+        "role": "Zahnärztin & Praxisinhaberin",
+        "experience": "25+ Jahre Erfahrung",
+        "description": "Fachzahnärztin für Allgemeinzahnmedizin mit Schwerpunkt auf ästhetischer und funktioneller Zahnheilkunde. Fortlaufende Weiterbildung in modernsten Behandlungsmethoden."
+      },
+      {
+        "name": "Gabriele Herrmann",
+        "role": "Zahnmedizinische Fachangestellte",
+        "experience": "20+ Jahre Erfahrung",
+        "description": "Spezialistin für Prophylaxe und Patientenbetreuung. Kompetente Ansprechpartnerin für alle Fragen rund um Ihre Zahngesundheit."
+      },
+      {
+        "name": "Sandra Guttschuss",
+        "role": "Zahnmedizinische Fachangestellte",
+        "experience": "8+ Jahre Erfahrung",
+        "description": "Expertin für Assistenz und Patientenmanagement. Sorgt für einen reibungslosen Praxisablauf und Ihr Wohlbefinden."
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Modernste Technologie",
+    "subtitle": "Wir investieren kontinuierlich in modernste zahnmedizinische Technologie, um Ihnen die beste Behandlungsqualität zu bieten.",
+    "items": [
+      {
+        "title": "CEREC® Keramik-Rekonstruktion",
+        "description": "Computergestützte Herstellung von hochwertigem Keramik-Zahnersatz in nur einer Sitzung - ohne Abdrücke, ohne Provisorien."
+      },
+      {
+        "title": "Digitales Röntgen",
+        "description": "Strahlungsarme, hochauflösende Röntgendiagnostik für präzise Befundung und optimale Behandlungsplanung."
+      },
+      {
+        "title": "Intraorale Kamera",
+        "description": "Hochauflösende Kamerabilder ermöglichen Ihnen, Ihre Zähne aus der Perspektive des Zahnarztes zu sehen und Behandlungen besser zu verstehen."
+      },
+      {
+        "title": "Dental-Laser",
+        "description": "Schonende, schmerzarme Behandlung von Zahnfleischerkrankungen und Wurzelkanälen mit modernster Lasertechnologie."
+      }
+    ]
+  },
+  "location": {
+    "title": "Unsere Lage",
+    "subtitle": "Zentral im Ärztehaus HD-West",
+    "addressTitle": "Adresse",
+    "address": "Franz-Knauff-Straße 2-4",
+    "city": "69115 Heidelberg",
+    "floor": "4. Stock im Ärztehaus HD-West",
+    "transportTitle": "Anfahrt",
+    "transport": [
+      "Mit dem Auto: Parkplätze vor dem Haus vorhanden",
+      "Mit dem ÖPNV: Haltestelle Pfaffengrund/Telekom",
+      "Barrierefreier Zugang mit Aufzug"
+    ],
+    "contactTitle": "Kontakt",
+    "phone": "Tel: 06221 - 6184010",
+    "email": "E-Mail: info@heidelberg-zahnmedizin.de"
+  },
+  "cta": {
+    "title": "Besuchen Sie uns",
+    "subtitle": "Vereinbaren Sie einen Termin und lernen Sie unser Team und unsere moderne Praxis persönlich kennen.",
+    "bookButton": "Online Termin buchen",
+    "contactButton": "Kontakt aufnehmen"
+  }
+}

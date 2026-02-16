@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Über unsere Praxis",
+    "description": "Seit über 25 Jahren Ihre Ansprechpartner für ganzheitliche Zahngesundheit in Heidelberg. Moderne Zahnmedizin mit persönlicher Betreuung."
+  },
+  "philosophy": {
+    "title": "Unsere Philosophie",
+    "p1": "In unserer Zahnarztpraxis verbinden wir modernste Technologie mit persönlicher, einfühlsamer Betreuung. Wir arbeiten evidenzbasiert nach den neuesten zahnmedizinischen Leitlinien und bilden uns kontinuierlich fort.",
+    "p2": "Unser Ziel ist es, Ihre natürlichen Zähne so lange wie möglich zu erhalten. Durch präventive Maßnahmen, minimalinvasive Behandlungsmethoden und regelmäßige Weiterbildung bieten wir Ihnen Zahnmedizin auf höchstem Niveau.",
+    "p3": "Wir nehmen uns Zeit für Sie - für eine ausführliche Beratung, eine schonende Behandlung und Ihre individuellen Bedürfnisse."
+  },
+  "pillars": {
+    "modern": {
+      "title": "Modernste Technologie",
+      "description": "CEREC-Keramik, digitales Röntgen, intraorale Kamera und Dental-Laser für schonende Behandlungen."
+    },
+    "prevention": {
+      "title": "Prophylaxe & Prävention",
+      "description": "Regelmäßige professionelle Zahnreinigung und Vorsorge für lebenslang gesunde Zähne."
+    },
+    "care": {
+      "title": "Persönliche Betreuung",
+      "description": "Individuelle Behandlungspläne und einfühlsame Begleitung für Ihr Wohlbefinden."
+    }
+  },
+  "team": {
+    "title": "Unser Team",
+    "subtitle": "Erfahrene Zahnmediziner mit Leidenschaft für Ihre Zahngesundheit.",
+    "drHerrmann": {
+      "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+      "role": "Zahnärztin & Praxisinhaberin",
+      "bio": "Fachzahnärztin für Allgemeinzahnmedizin mit über 25 Jahren Erfahrung. Schwerpunkt auf ästhetischer und funktioneller Zahnheilkunde. Fortlaufende Weiterbildung in modernsten Behandlungsmethoden für optimale Patientenversorgung."
+    },
+    "gabriele": {
+      "name": "Gabriele Herrmann",
+      "role": "Zahnmedizinische Fachangestellte",
+      "bio": "Über 20 Jahre Erfahrung in der Prophylaxe und Patientenbetreuung. Kompetente Ansprechpartnerin für alle Fragen rund um Ihre Zahngesundheit und professionelle Zahnreinigung."
+    },
+    "sandra": {
+      "name": "Sandra Guttschuss",
+      "role": "Zahnmedizinische Fachangestellte",
+      "bio": "8+ Jahre Erfahrung in Assistenz und Patientenmanagement. Sorgt für einen reibungslosen Praxisablauf und Ihr Wohlbefinden während der Behandlung."
+    },
+    "expertise": {
+      "prevention": "Prophylaxe & Vorsorge",
+      "aesthetics": "Ästhetische Zahnmedizin",
+      "functional": "Funktionsdiagnostik",
+      "prosthetics": "Zahnersatz & Prothetik"
+    }
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "description": "Bereit für gesunde Zähne? Kontaktieren Sie uns für einen Termin."
+  }
+}

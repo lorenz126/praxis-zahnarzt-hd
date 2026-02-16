@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Gesunde Zähne ein Leben lang",
+    "subtitle": "Herzlich willkommen in unserer Zahnarztpraxis im Ärztehaus West - mitten im Herzen von Heidelberg. Wir bieten Ihnen moderne Zahnmedizin mit persönlicher Betreuung in angenehmer Atmosphäre.",
+    "imageTitle": "Gesunde Zähne",
+    "imageSubtitle": "Ein Leben lang",
+    "bookButton": "Termin buchen"
+  },
+  "teamPreview": {
+    "title": "Unser Team",
+    "subtitle": "Erfahren und einfühlsam",
+    "cta": "Mehr über uns erfahren"
+  },
+  "keyServices": {
+    "title": "Unsere Schwerpunkte",
+    "subtitle": "Moderne Zahnmedizin für Ihre Gesundheit",
+    "prevention": {
+      "title": "Prophylaxe & Vorsorge",
+      "description": "Professionelle Zahnreinigung und präventive Maßnahmen für lebenslang gesunde Zähne."
+    },
+    "periodontology": {
+      "title": "Parodontologie",
+      "description": "Schonende Behandlung von Zahnfleischerkrankungen mit modernster Lasertechnologie."
+    },
+    "cerec": {
+      "title": "CEREC-Keramik",
+      "description": "Hochwertiger Zahnersatz in nur einer Sitzung - ohne Abdrücke, ohne Provisorien."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Wie vereinbare ich einen Termin?",
+        "answer": "Sie können online über unser Buchungsportal einen Termin vereinbaren oder uns telefonisch unter 06221 - 6184010 kontaktieren. Wir freuen uns auf Ihren Besuch!"
+      },
+      {
+        "question": "Welche Leistungen bieten Sie an?",
+        "answer": "Wir bieten das gesamte Spektrum der modernen Zahnmedizin: Prophylaxe, Füllungen, Wurzelbehandlungen, Zahnersatz, Parodontologie, Implantologie, Kinderzahnheilkunde und ästhetische Zahnmedizin."
+      },
+      {
+        "question": "Übernimmt die Krankenkasse die Kosten?",
+        "answer": "Viele Leistungen werden von gesetzlichen und privaten Krankenkassen übernommen. Wir beraten Sie gerne ausführlich zu den Kostenübernahmen und erstellen transparente Heil- und Kostenpläne."
+      },
+      {
+        "question": "Gibt es Parkmöglichkeiten?",
+        "answer": "Ja, direkt vor dem Ärztehaus HD-West stehen Parkplätze zur Verfügung. Die Praxis ist auch gut mit öffentlichen Verkehrsmitteln erreichbar (Haltestelle Pfaffengrund/Telekom)."
+      }
+    ]
+  },
+  "findUs": {
+    "title": "So finden Sie uns",
+    "subtitle": "Besuchen Sie uns in Heidelberg für eine persönliche Beratung.",
+    "address": "Zahnarztpraxis Dr. Herrmann-Flechtenmacher",
+    "addressLine": "Franz-Knauff-Straße 2-4, 69115 Heidelberg",
+    "floor": "4. Stock im Ärztehaus HD-West",
+    "hours": "Öffnungszeiten",
+    "schedule": [
+      { "day": "Montag & Mittwoch", "time": "8:00 - 16:00 Uhr" },
+      { "day": "Dienstag", "time": "9:00 - 18:00 Uhr" },
+      { "day": "Donnerstag", "time": "10:00 - 19:00 Uhr" },
+      { "day": "Freitag", "time": "8:00 - 14:00 Uhr" }
+    ],
+    "transport": "Anfahrt: Parkplätze vor dem Haus • ÖPNV: Haltestelle Pfaffengrund/Telekom • Barrierefreier Zugang"
+  }
+}

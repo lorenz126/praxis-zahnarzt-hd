@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind für Sie da - kontaktieren Sie uns für Terminvereinbarungen, Fragen oder Notfälle."
+  },
+  "cards": {
+    "phone": {
+      "title": "Telefon",
+      "value": "06221 - 6184010"
+    },
+    "email": {
+      "title": "E-Mail",
+      "value": "info@heidelberg-zahnmedizin.de"
+    },
+    "address": {
+      "title": "Adresse",
+      "line1": "Franz-Knauff-Straße 2-4",
+      "line2": "69115 Heidelberg",
+      "line3": "Ärztehaus HD-West, 4. Stock"
+    }
+  },
+  "hours": {
+    "title": "Sprechzeiten",
+    "schedule": [
+      { "day": "Montag", "hours": "8:00 - 16:00 Uhr" },
+      { "day": "Dienstag", "hours": "9:00 - 18:00 Uhr" },
+      { "day": "Mittwoch", "hours": "8:00 - 16:00 Uhr" },
+      { "day": "Donnerstag", "hours": "10:00 - 19:00 Uhr" },
+      { "day": "Freitag", "hours": "8:00 - 14:00 Uhr" },
+      { "day": "Samstag", "hours": "Geschlossen" },
+      { "day": "Sonntag", "hours": "Geschlossen" }
+    ],
+    "emergencyNote": "Termine nach Vereinbarung. Für Notfälle außerhalb der Sprechzeiten wenden Sie sich bitte an den zahnärztlichen Notdienst:",
+    "emergencyPhone": "01805 - 607011"
+  },
+  "map": {
+    "title": "So finden Sie uns",
+    "transportTitle": "Anfahrt:",
+    "transport": "Parkplätze vor dem Haus vorhanden. ÖPNV: Haltestelle Pfaffengrund/Telekom. Barrierefreier Zugang mit Aufzug."
+  },
+  "form": {
+    "title": "Schreiben Sie uns",
+    "subtitle": "Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Nutzen Sie unser Kontaktformular.",
+    "fields": {
+      "name": {
+        "label": "Name *",
+        "placeholder": "Ihr Name"
+      },
+      "email": {
+        "label": "E-Mail *",
+        "placeholder": "ihre@email.de"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Optional"
+      },
+      "message": {
+        "label": "Nachricht *",
+        "placeholder": "Ihre Nachricht an uns..."
+      }
+    },
+    "submit": "Nachricht senden",
+    "successMessage": "Vielen Dank für Ihre Nachricht! Wir melden uns schnellstmöglich bei Ihnen."
+  },
+  "booking": {
+    "title": "Online Termin buchen",
+    "subtitle": "Buchen Sie Ihren Wunschtermin ganz einfach online - schnell, unkompliziert und rund um die Uhr.",
+    "button": "Zum Online-Terminkalender"
+  },
+  "patientForms": {
+    "title": "Patientenformulare",
+    "subtitle": "Bereiten Sie Ihren ersten Besuch vor - laden Sie unsere Patientenformulare herunter und bringen Sie diese ausgefüllt mit.",
+    "forms": [
+      {
+        "title": "Anamnesebogen",
+        "description": "Für Neupatienten",
+        "button": "Download (PDF)"
+      },
+      {
+        "title": "Datenschutzerklärung",
+        "description": "DSGVO-Informationen",
+        "button": "Download (PDF)"
+      },
+      {
+        "title": "Einwilligungserklärung",
+        "description": "Behandlung & Daten",
+        "button": "Download (PDF)"
+      }
+    ],
+    "notice": "* Diese Formulare stehen demnächst zum Download bereit"
+  }
+}

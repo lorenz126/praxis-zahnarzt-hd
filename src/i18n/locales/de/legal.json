@@ -1,0 +1,171 @@
+{
+  "impressum": {
+    "hero": {
+      "title": "Impressum"
+    },
+    "provider": {
+      "title": "Angaben gemäß § 5 TMG",
+      "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+      "type": "Zahnarztpraxis",
+      "address": "Franz-Knauff-Straße 2-4",
+      "city": "69115 Heidelberg"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon:",
+      "phoneValue": "06221 - 6184010",
+      "email": "E-Mail:",
+      "emailValue": "info@heidelberg-zahnmedizin.de"
+    },
+    "registration": {
+      "title": "Berufsbezeichnung und berufsrechtliche Regelungen",
+      "designation": "Berufsbezeichnung:",
+      "designationValue": "Zahnärztin, verliehen in der Bundesrepublik Deutschland",
+      "chamber": "Zuständige Kammer:",
+      "chamberName": "Landeszahnärztekammer Baden-Württemberg",
+      "chamberAddress": "Albstadtweg 9, 70567 Stuttgart",
+      "chamberWebsite": "www.lzk-bw.de",
+      "authority": "Zuständige Aufsichtsbehörde:",
+      "authorityName": "Kassenzahnärztliche Vereinigung Baden-Württemberg",
+      "authorityDivision": "Bezirksdirektion Karlsruhe",
+      "authorityAddress": "Albtalstraße 32, 76137 Karlsruhe",
+      "regulations": "Berufsrechtliche Regelungen:",
+      "regulationsList": [
+        "Heilberufe-Kammergesetz (HBKG)",
+        "Berufsordnung der Landeszahnärztekammer Baden-Württemberg",
+        "Gebührenordnung für Zahnärzte (GOZ)"
+      ],
+      "regulationsNote": "Die Regelungen sind einsehbar unter:"
+    },
+    "vat": {
+      "title": "Umsatzsteuer-ID",
+      "content": "Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: auf Anfrage"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": {
+        "title": "Haftung für Inhalte",
+        "text": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "text": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+      }
+    },
+    "dispute": {
+      "title": "Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+      "platformUrl": "https://ec.europa.eu/consumers/odr",
+      "emailNote": "Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+      "participation": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    }
+  },
+  "datenschutz": {
+    "hero": {
+      "title": "Datenschutzerklärung"
+    },
+    "intro": {
+      "text": "Wir freuen uns über Ihr Interesse an unserer Praxis. Der Schutz Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend informieren wir Sie ausführlich über den Umgang mit Ihren Daten."
+    },
+    "responsible": {
+      "title": "1. Verantwortlicher",
+      "intro": "Verantwortlich für die Datenverarbeitung ist:",
+      "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+      "address": "Franz-Knauff-Straße 2-4",
+      "city": "69115 Heidelberg",
+      "email": "E-Mail:"
+    },
+    "dataCollection": {
+      "title": "2. Erhebung und Speicherung personenbezogener Daten",
+      "website": {
+        "title": "2.1 Beim Besuch der Website",
+        "intro": "Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:",
+        "items": [
+          "IP-Adresse des anfragenden Rechners",
+          "Datum und Uhrzeit des Zugriffs",
+          "Name und URL der abgerufenen Datei",
+          "Website, von der aus der Zugriff erfolgt (Referrer-URL)",
+          "Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers"
+        ],
+        "purpose": "Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet: Gewährleistung eines reibungslosen Verbindungsaufbaus der Website, Gewährleistung einer komfortablen Nutzung unserer Website, Auswertung der Systemsicherheit und -stabilität sowie zu weiteren administrativen Zwecken."
+      },
+      "contactForm": {
+        "title": "2.2 Bei Nutzung unseres Kontaktformulars",
+        "text": "Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit, mit uns über ein auf der Website bereitgestelltes Formular Kontakt aufzunehmen. Dabei sind die Angabe einer gültigen E-Mail-Adresse und Ihres Namens erforderlich, damit wir wissen, von wem die Anfrage stammt und um diese beantworten zu können. Weitere Angaben können freiwillig getätigt werden."
+      },
+      "patientData": {
+        "title": "2.3 Patientendaten",
+        "text": "Im Rahmen der zahnärztlichen Behandlung erheben und verarbeiten wir Gesundheitsdaten. Diese unterliegen besonderen gesetzlichen Schutzbestimmungen und werden ausschließlich zum Zweck Ihrer medizinischen Versorgung verwendet. Die Rechtsgrundlage hierfür ergibt sich aus Art. 9 Abs. 2 lit. h DSGVO i.V.m. § 22 Abs. 1 Nr. 1 lit. b BDSG."
+      }
+    },
+    "dataUsage": {
+      "title": "3. Weitergabe von Daten",
+      "intro": "Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:",
+      "conditions": [
+        "Sie Ihre nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu erteilt haben",
+        "die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist",
+        "die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. c DSGVO zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist",
+        "dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b DSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist (z.B. Dentallabor, Krankenkassen)"
+      ]
+    },
+    "cookies": {
+      "title": "4. Cookies",
+      "intro": "Unsere Website verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.",
+      "purpose": "Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Internetseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann. Die meisten Browser akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so konfigurieren, dass keine Cookies auf Ihrem Computer gespeichert werden oder stets ein Hinweis erscheint, bevor ein neuer Cookie angelegt wird."
+    },
+    "userRights": {
+      "title": "5. Ihre Rechte als Betroffener",
+      "intro": "Sie haben folgende Rechte:",
+      "rights": [
+        {
+          "title": "Auskunftsrecht (Art. 15 DSGVO):",
+          "text": "Sie haben das Recht, Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen."
+        },
+        {
+          "title": "Recht auf Berichtigung (Art. 16 DSGVO):",
+          "text": "Sie haben das Recht, unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen."
+        },
+        {
+          "title": "Recht auf Löschung (Art. 17 DSGVO):",
+          "text": "Sie haben das Recht, die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen, soweit nicht die Verarbeitung zur Ausübung des Rechts auf freie Meinungsäußerung, zur Erfüllung einer rechtlichen Verpflichtung oder zur Geltendmachung von Rechtsansprüchen erforderlich ist."
+        },
+        {
+          "title": "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO):",
+          "text": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+        },
+        {
+          "title": "Recht auf Datenübertragbarkeit (Art. 20 DSGVO):",
+          "text": "Sie haben das Recht, Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten."
+        },
+        {
+          "title": "Widerspruchsrecht (Art. 21 DSGVO):",
+          "text": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten Widerspruch einzulegen."
+        },
+        {
+          "title": "Recht auf Widerruf der Einwilligung (Art. 7 Abs. 3 DSGVO):",
+          "text": "Sie haben das Recht, Ihre erteilte Einwilligung jederzeit zu widerrufen."
+        },
+        {
+          "title": "Beschwerderecht (Art. 77 DSGVO):",
+          "text": "Sie haben das Recht, sich bei einer Aufsichtsbehörde zu beschweren."
+        }
+      ]
+    },
+    "dataRetention": {
+      "title": "6. Dauer der Datenspeicherung",
+      "text": "Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Dies ist für die personenbezogenen Daten der Fall, wenn die jeweilige Sitzung beendet ist. Patientendaten unterliegen gesetzlichen Aufbewahrungsfristen (in der Regel 10 Jahre ab Abschluss der Behandlung)."
+    },
+    "dataSecurity": {
+      "title": "7. Datensicherheit",
+      "text": "Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. Wir bedienen uns im Übrigen geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmaßnahmen werden entsprechend der technologischen Entwicklung fortlaufend verbessert."
+    },
+    "updates": {
+      "title": "8. Aktualität und Änderung dieser Datenschutzerklärung",
+      "text": "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Februar 2026. Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website unter „Datenschutz\" von Ihnen abgerufen und ausgedruckt werden."
+    }
+  }
+}

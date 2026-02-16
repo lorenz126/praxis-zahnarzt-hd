@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "practice": "Practice",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Appointment",
+    "findUs": "Find Us"
+  },
+  "navDescriptions": {
+    "healthLifestyle": "Comprehensive assessment of your health status and lifestyle factors",
+    "aestheticDiagnostics": "Professional evaluation of skin health and aging factors",
+    "cosmeticDiagnostics": "Detailed analysis for cosmetic treatment planning",
+    "aestheticTreatments": "Botox, microneedling, biostimulation & PRP",
+    "cosmeticTreatments": "Skin analysis, microdermabrasion & ultrasound",
+    "wellnessInfusions": "Glow, immunboost & NAD+ infusions"
+  },
+  "navItems": {
+    "healthLifestyle": "Health & Lifestyle Consulting",
+    "aestheticDiagnostics": "Aesthetic Diagnostics",
+    "cosmeticDiagnostics": "Cosmetic Diagnostics",
+    "aestheticTreatments": "Aesthetic Treatments",
+    "cosmeticTreatments": "Cosmetic Treatments",
+    "wellnessInfusions": "Wellness Infusions",
+    "viewAll": "View All {{section}}"
+  },
+  "gender": {
+    "women": "Women",
+    "men": "Men"
+  },
+  "buttons": {
+    "learnMore": "Learn more",
+    "bookConsultation": "Book a Consultation",
+    "bookYourConsultation": "Book Your Consultation",
+    "contactUs": "Contact Us",
+    "exploreServices": "Explore Our Services",
+    "backToEatery": "Back to Eatery",
+    "backToDiagnostics": "Back to Diagnostics",
+    "backToTreatments": "Back to Treatments"
+  },
+  "footer": {
+    "tagline": "Healthy teeth for a lifetime - with cutting-edge technology and personal care.",
+    "services": "Services",
+    "company": "Company",
+    "getInTouch": "Get in Touch",
+    "aboutUs": "About Us",
+    "ourTeam": "Our Team",
+    "contact": "Contact",
+    "copyright": "Zahnarztpraxis Dr. Herrmann-Flechtenmacher. All rights reserved.",
+    "newsletter": {
+      "title": "Stay in the loop",
+      "subtitle": "Wellness tips and updates, delivered to your inbox."
+    }
+  }
+}

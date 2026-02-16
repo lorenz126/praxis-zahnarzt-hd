@@ -1,0 +1,142 @@
+{
+  "hub": {
+    "title": "Our Services",
+    "subtitle": "Modern dentistry with personal care - discover our comprehensive range of services for your dental health.",
+    "cta": {
+      "title": "Questions About Our Services?",
+      "subtitle": "Schedule an appointment for a personal consultation. We take time for you and your dental health.",
+      "bookButton": "Book Online Appointment",
+      "contactButton": "Contact Us"
+    },
+    "learnMore": "Learn more"
+  },
+  "cards": [
+    {
+      "id": "prevention",
+      "title": "Prophylaxis & Prevention",
+      "category": "Prevention",
+      "description": "Professional teeth cleaning and preventive care"
+    },
+    {
+      "id": "fillings",
+      "title": "Fillings",
+      "category": "Conservation",
+      "description": "Biocompatible materials for durable fillings"
+    },
+    {
+      "id": "prosthodontics",
+      "title": "Dental Prosthetics",
+      "category": "Prosthetics",
+      "description": "Crowns, bridges, veneers and dentures"
+    },
+    {
+      "id": "endodontics",
+      "title": "Root Canal Treatment",
+      "category": "Endodontics",
+      "description": "Gentle root canal treatment"
+    },
+    {
+      "id": "periodontology",
+      "title": "Periodontology",
+      "category": "Gum Treatment",
+      "description": "Treatment of gum diseases"
+    },
+    {
+      "id": "implantology",
+      "title": "Implantology",
+      "category": "Dental Implants",
+      "description": "3D-guided implantology"
+    },
+    {
+      "id": "pediatric",
+      "title": "Pediatric Dentistry",
+      "category": "Children",
+      "description": "Child-friendly dental care"
+    },
+    {
+      "id": "aesthetics",
+      "title": "Dental Aesthetics",
+      "category": "Aesthetics",
+      "description": "Bleaching and cosmetic dental treatment"
+    },
+    {
+      "id": "functional",
+      "title": "Functional Diagnostics",
+      "category": "TMJ Therapy",
+      "description": "Bite splints and temporomandibular joint therapy"
+    }
+  ],
+  "prevention": {
+    "hero": {
+      "title": "Prophylaxis & Prevention",
+      "subtitle": "Prevention is better than cure - keep your teeth healthy for life with professional prophylaxis.",
+      "backButton": "Back to Services"
+    },
+    "benefitsTitle": "Our Prophylaxis Services",
+    "benefits": [
+      {
+        "title": "Professional Teeth Cleaning",
+        "description": "Removal of tartar and discoloration for healthy, clean teeth"
+      },
+      {
+        "title": "Pregnancy Prophylaxis",
+        "description": "Special preventive care for expectant mothers to avoid pregnancy gingivitis"
+      },
+      {
+        "title": "Enamel Hardening",
+        "description": "Fluoride treatment to strengthen tooth enamel and prevent cavities"
+      },
+      {
+        "title": "Saliva Test",
+        "description": "Analysis of your individual caries risk for customized prophylaxis"
+      }
+    ],
+    "processTitle": "Prophylaxis Procedure",
+    "process": [
+      {
+        "step": "1",
+        "title": "Initial Examination",
+        "description": "Comprehensive examination of your teeth and gums"
+      },
+      {
+        "step": "2",
+        "title": "Professional Cleaning",
+        "description": "Gentle removal of tartar, deposits and discoloration"
+      },
+      {
+        "step": "3",
+        "title": "Polish & Fluoridation",
+        "description": "Smoothing of tooth surfaces and enamel hardening"
+      },
+      {
+        "step": "4",
+        "title": "Consultation",
+        "description": "Individual tips for your home oral hygiene and nutrition"
+      }
+    ],
+    "faqsTitle": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "How often should I have professional teeth cleaning?",
+        "answer": "We recommend professional teeth cleaning every 6 months. In case of increased caries risk or periodontitis, more frequent prophylaxis may be advisable."
+      },
+      {
+        "question": "Does health insurance cover the costs?",
+        "answer": "Many statutory health insurance companies subsidize professional teeth cleaning. Private insurance often covers the costs in full. We are happy to advise you on the options."
+      },
+      {
+        "question": "Is the treatment painful?",
+        "answer": "Professional teeth cleaning is usually pain-free. In case of sensitive teeth or exposed tooth necks, local anesthesia can be used."
+      },
+      {
+        "question": "What is pregnancy prophylaxis?",
+        "answer": "During pregnancy, hormonal changes increase the risk of gum inflammation. Our special pregnancy prophylaxis prevents this and protects mother and child."
+      }
+    ],
+    "cta": {
+      "title": "Schedule Your Prophylaxis Appointment Now",
+      "subtitle": "Invest in your dental health - schedule an appointment for your professional teeth cleaning today.",
+      "button": "Book Online Appointment"
+    }
+  }
+}

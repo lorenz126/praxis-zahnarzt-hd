@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "practice": "Praxis",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "bookNow": "Termin buchen",
+    "findUs": "So finden Sie uns"
+  },
+  "navDescriptions": {
+    "healthLifestyle": "Umfassende Bewertung Deines Gesundheitszustands und Lebensstilfaktoren",
+    "aestheticDiagnostics": "Professionelle Beurteilung der Hautgesundheit und Alterungsfaktoren",
+    "cosmeticDiagnostics": "Detaillierte Analyse für die Planung kosmetischer Behandlungen",
+    "aestheticTreatments": "Botox, Microneedling, Biostimulation & PRP",
+    "cosmeticTreatments": "Hautanalyse, Mikrodermabrasion & Ultraschall",
+    "wellnessInfusions": "Glow, Immunboost & NAD+ Infusionen"
+  },
+  "navItems": {
+    "healthLifestyle": "Gesundheits- & Lifestyle-Beratung",
+    "aestheticDiagnostics": "Ästhetische Diagnostik",
+    "cosmeticDiagnostics": "Kosmetische Diagnostik",
+    "aestheticTreatments": "Ästhetische Behandlungen",
+    "cosmeticTreatments": "Kosmetische Behandlungen",
+    "wellnessInfusions": "Wellness-Infusionen",
+    "viewAll": "Alle {{section}} anzeigen"
+  },
+  "gender": {
+    "women": "Damen",
+    "men": "Herren"
+  },
+  "buttons": {
+    "learnMore": "Mehr erfahren",
+    "bookConsultation": "Beratung buchen",
+    "bookYourConsultation": "Deine Beratung buchen",
+    "contactUs": "Kontaktiere uns",
+    "exploreServices": "Unsere Leistungen entdecken",
+    "backToEatery": "Zurück zum Eatery",
+    "backToDiagnostics": "Zurück zu Diagnostik",
+    "backToTreatments": "Zurück zu Behandlungen"
+  },
+  "footer": {
+    "tagline": "Gesunde Zähne ein Leben lang - mit modernster Technologie und persönlicher Betreuung.",
+    "services": "Leistungen",
+    "company": "Unternehmen",
+    "getInTouch": "Kontakt",
+    "aboutUs": "Über uns",
+    "ourTeam": "Unser Team",
+    "contact": "Kontakt",
+    "copyright": "Zahnarztpraxis Dr. Herrmann-Flechtenmacher. Alle Rechte vorbehalten.",
+    "newsletter": {
+      "title": "Bleib informiert",
+      "subtitle": "Wellness-Tipps und Neuigkeiten, direkt in Deinem Postfach."
+    }
+  }
+}

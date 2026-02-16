@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "title": "Our Practice",
+    "subtitle": "Modern dentistry with a personal touch - get to know our team and our practice."
+  },
+  "philosophy": {
+    "title": "Our Philosophy",
+    "paragraphs": [
+      "In our dental practice, we combine state-of-the-art technology with personal, empathetic care. For over 25 years, we have been your partner for holistic dental health in Heidelberg.",
+      "Our goal is to preserve your natural teeth for as long as possible. Through preventive measures, minimally invasive treatment methods and regular continuing education of our team, we offer you dentistry at the highest level.",
+      "We take time for you - for comprehensive consultation, gentle treatment and your individual needs."
+    ]
+  },
+  "team": {
+    "title": "Our Team",
+    "members": [
+      {
+        "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+        "role": "Dentist & Practice Owner",
+        "experience": "25+ years of experience",
+        "description": "Specialist dentist for general dentistry with a focus on aesthetic and functional dentistry. Continuous training in the most modern treatment methods."
+      },
+      {
+        "name": "Gabriele Herrmann",
+        "role": "Dental Assistant",
+        "experience": "20+ years of experience",
+        "description": "Specialist for prophylaxis and patient care. Competent contact person for all questions about your dental health."
+      },
+      {
+        "name": "Sandra Guttschuss",
+        "role": "Dental Assistant",
+        "experience": "8+ years of experience",
+        "description": "Expert in assistance and patient management. Ensures smooth practice operations and your wellbeing."
+      }
+    ]
+  },
+  "technologies": {
+    "title": "State-of-the-Art Technology",
+    "subtitle": "We continuously invest in the latest dental technology to provide you with the best treatment quality.",
+    "items": [
+      {
+        "title": "CEREC® Ceramic Reconstruction",
+        "description": "Computer-aided production of high-quality ceramic dental restorations in just one session - without impressions, without temporary restorations."
+      },
+      {
+        "title": "Digital X-Ray",
+        "description": "Low-radiation, high-resolution X-ray diagnostics for precise diagnosis and optimal treatment planning."
+      },
+      {
+        "title": "Intraoral Camera",
+        "description": "High-resolution camera images allow you to see your teeth from the dentist's perspective and better understand treatments."
+      },
+      {
+        "title": "Dental Laser",
+        "description": "Gentle, low-pain treatment of gum diseases and root canals with state-of-the-art laser technology."
+      }
+    ]
+  },
+  "location": {
+    "title": "Our Location",
+    "subtitle": "Centrally located in the HD-West Medical Center",
+    "addressTitle": "Address",
+    "address": "Franz-Knauff-Straße 2-4",
+    "city": "69115 Heidelberg",
+    "floor": "4th floor in the HD-West Medical Center",
+    "transportTitle": "Directions",
+    "transport": [
+      "By car: Parking available in front of the building",
+      "By public transport: Stop Pfaffengrund/Telekom",
+      "Barrier-free access with elevator"
+    ],
+    "contactTitle": "Contact",
+    "phone": "Tel: 06221 - 6184010",
+    "email": "Email: info@heidelberg-zahnmedizin.de"
+  },
+  "cta": {
+    "title": "Visit Us",
+    "subtitle": "Make an appointment and get to know our team and our modern practice personally.",
+    "bookButton": "Book Online Appointment",
+    "contactButton": "Contact Us"
+  }
+}

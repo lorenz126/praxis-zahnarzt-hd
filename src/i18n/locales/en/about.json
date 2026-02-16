@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "About Our Practice",
+    "description": "Your partner for holistic dental health in Heidelberg for over 25 years. Modern dentistry with personal care."
+  },
+  "philosophy": {
+    "title": "Our Philosophy",
+    "p1": "In our dental practice, we combine state-of-the-art technology with personal, empathetic care. We work evidence-based according to the latest dental guidelines and continuously pursue further education.",
+    "p2": "Our goal is to preserve your natural teeth for as long as possible. Through preventive measures, minimally invasive treatment methods and regular training, we offer you dentistry at the highest level.",
+    "p3": "We take time for you - for comprehensive consultation, gentle treatment and your individual needs."
+  },
+  "pillars": {
+    "modern": {
+      "title": "State-of-the-Art Technology",
+      "description": "CEREC ceramics, digital X-ray, intraoral camera and dental laser for gentle treatments."
+    },
+    "prevention": {
+      "title": "Prophylaxis & Prevention",
+      "description": "Regular professional teeth cleaning and preventive care for lifelong healthy teeth."
+    },
+    "care": {
+      "title": "Personal Care",
+      "description": "Individual treatment plans and empathetic support for your wellbeing."
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Experienced dental professionals passionate about your dental health.",
+    "drHerrmann": {
+      "name": "Dr. med. dent. Christine Herrmann-Flechtenmacher",
+      "role": "Dentist & Practice Owner",
+      "bio": "Specialist dentist for general dentistry with over 25 years of experience. Focus on aesthetic and functional dentistry. Continuous training in the latest treatment methods for optimal patient care."
+    },
+    "gabriele": {
+      "name": "Gabriele Herrmann",
+      "role": "Dental Assistant",
+      "bio": "Over 20 years of experience in prophylaxis and patient care. Competent contact person for all questions about your dental health and professional teeth cleaning."
+    },
+    "sandra": {
+      "name": "Sandra Guttschuss",
+      "role": "Dental Assistant",
+      "bio": "8+ years of experience in assistance and patient management. Ensures smooth practice operations and your wellbeing during treatment."
+    },
+    "expertise": {
+      "prevention": "Prophylaxis & Prevention",
+      "aesthetics": "Aesthetic Dentistry",
+      "functional": "Functional Diagnostics",
+      "prosthetics": "Dental Prosthetics"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Ready for healthy teeth? Contact us for an appointment."
+  }
+}

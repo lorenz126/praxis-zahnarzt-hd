@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Healthy Teeth for Life",
+    "subtitle": "Welcome to our dental practice in the West Medical Center - in the heart of Heidelberg. We offer you modern dentistry with personal care in a pleasant atmosphere.",
+    "imageTitle": "Healthy Teeth",
+    "imageSubtitle": "For Life",
+    "bookButton": "Book Appointment"
+  },
+  "teamPreview": {
+    "title": "Our Team",
+    "subtitle": "Experienced and Empathetic",
+    "cta": "Learn More About Us"
+  },
+  "keyServices": {
+    "title": "Our Focus Areas",
+    "subtitle": "Modern Dentistry for Your Health",
+    "prevention": {
+      "title": "Prophylaxis & Prevention",
+      "description": "Professional teeth cleaning and preventive measures for lifelong healthy teeth."
+    },
+    "periodontology": {
+      "title": "Periodontology",
+      "description": "Gentle treatment of gum diseases with state-of-the-art laser technology."
+    },
+    "cerec": {
+      "title": "CEREC Ceramics",
+      "description": "High-quality dental restorations in just one session - without impressions, without temporaries."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How do I schedule an appointment?",
+        "answer": "You can book an appointment online through our booking portal or contact us by phone at 06221 - 6184010. We look forward to your visit!"
+      },
+      {
+        "question": "What services do you offer?",
+        "answer": "We offer the full spectrum of modern dentistry: prophylaxis, fillings, root canal treatments, dental prosthetics, periodontology, implantology, pediatric dentistry and aesthetic dentistry."
+      },
+      {
+        "question": "Does health insurance cover the costs?",
+        "answer": "Many services are covered by statutory and private health insurance. We are happy to advise you in detail about cost coverage and prepare transparent treatment and cost plans."
+      },
+      {
+        "question": "Are there parking facilities?",
+        "answer": "Yes, parking is available directly in front of the HD-West Medical Center. The practice is also easily accessible by public transport (stop Pfaffengrund/Telekom)."
+      }
+    ]
+  },
+  "findUs": {
+    "title": "How to Find Us",
+    "subtitle": "Visit us in Heidelberg for a personal consultation.",
+    "address": "Dental Practice Dr. Herrmann-Flechtenmacher",
+    "addressLine": "Franz-Knauff-Straße 2-4, 69115 Heidelberg",
+    "floor": "4th floor in the HD-West Medical Center",
+    "hours": "Office Hours",
+    "schedule": [
+      { "day": "Monday & Wednesday", "time": "8:00 AM - 4:00 PM" },
+      { "day": "Tuesday", "time": "9:00 AM - 6:00 PM" },
+      { "day": "Thursday", "time": "10:00 AM - 7:00 PM" },
+      { "day": "Friday", "time": "8:00 AM - 2:00 PM" }
+    ],
+    "transport": "Directions: Parking in front of the building • Public transport: Stop Pfaffengrund/Telekom • Barrier-free access"
+  }
+}
