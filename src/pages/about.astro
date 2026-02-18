@@ -1,0 +1,171 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import about from '../data/de/about.json';
+
+const accentColor = '#2563EB';
+
+const team = [
+  {
+    name: about.team.drHerrmann.name,
+    role: about.team.drHerrmann.role,
+    expertise: [
+      about.team.expertise.prevention,
+      about.team.expertise.aesthetics,
+      about.team.expertise.functional,
+      about.team.expertise.prosthetics,
+    ],
+    bio: about.team.drHerrmann.bio,
+    image: '/images/christine-herrmann-flechtenmacher.png',
+  },
+  {
+    name: about.team.gabriele.name,
+    role: about.team.gabriele.role,
+    expertise: [about.team.expertise.prevention],
+    bio: about.team.gabriele.bio,
+    image: null,
+  },
+  {
+    name: about.team.sandra.name,
+    role: about.team.sandra.role,
+    expertise: [],
+    bio: about.team.sandra.bio,
+    image: null,
+  },
+];
+
+const pillars = [
+  {
+    title: about.pillars.modern.title,
+    description: about.pillars.modern.description,
+    iconPath: 'M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25',
+  },
+  {
+    title: about.pillars.prevention.title,
+    description: about.pillars.prevention.description,
+    iconPath: 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z',
+  },
+  {
+    title: about.pillars.care.title,
+    description: about.pillars.care.description,
+    iconPath: 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z',
+  },
+];
+---
+
+<BaseLayout
+  title="Über uns | Zahnarztpraxis Dr. Herrmann-Flechtenmacher"
+  description="Lernen Sie das Team der Zahnarztpraxis Dr. Herrmann-Flechtenmacher in Heidelberg kennen. Über 25 Jahre Erfahrung in moderner Zahnmedizin."
+>
+  <!-- Hero -->
+  <section>
+    <div class="section py-20">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl font-semibold text-black">
+          {about.hero.title}
+        </h1>
+        <p class="mt-6 text-lg text-gray-600">
+          {about.hero.description}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy with Team Photo -->
+  <section class="section">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-2xl font-semibold text-black mb-6">
+          {about.philosophy.title}
+        </h2>
+        <p class="text-gray-600">{about.philosophy.p1}</p>
+        <p class="mt-4 text-gray-600">{about.philosophy.p2}</p>
+        <p class="mt-4 text-gray-600 font-medium">{about.philosophy.p3}</p>
+      </div>
+      <div class="rounded-2xl overflow-hidden">
+        <img src="/images/team-photo.png" alt="Zahnarztpraxis Team" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Pillars -->
+  <section>
+    <div class="section">
+      <div class="grid md:grid-cols-3 gap-8">
+        {pillars.map((pillar) => (
+          <div class="bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-gray-200">
+            <div style={`color: ${accentColor}`} class="mb-4">
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d={pillar.iconPath} />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-black">{pillar.title}</h3>
+            <p class="mt-3 text-gray-600">{pillar.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section" id="team">
+    <h2 class="text-3xl font-semibold text-black text-center mb-4">
+      {about.team.title}
+    </h2>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+      {about.team.subtitle}
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {team.map((member) => (
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl border border-gray-200 overflow-hidden">
+          <div class="bg-gray-100 aspect-[4/3]">
+            {member.image ? (
+              <img src={member.image} alt={member.name} class="w-full h-full object-cover" />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center text-gray-300">
+                <svg class="w-24 h-24" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+              </div>
+            )}
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-black">{member.name}</h3>
+            <p class="text-gray-500 mt-1">{member.role}</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              {member.expertise.map((skill) => (
+                <span
+                  class="text-xs px-3 py-1 rounded-full"
+                  style={`background-color: ${accentColor}15; color: ${accentColor}`}
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+            <p class="mt-4 text-gray-600 text-sm leading-relaxed">{member.bio}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="bg-black text-white" id="contact">
+    <div class="section">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-semibold">{about.contact.title}</h2>
+        <p class="mt-4 text-white/80">{about.contact.description}</p>
+        <div class="mt-8">
+          <p class="text-white/90">
+            <span class="text-white/60">E-Mail:</span> info@heidelberg-zahnmedizin.de
+          </p>
+        </div>
+        <div class="mt-8">
+          <a href="/contact" class="inline-block bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
+            Kontaktiere uns
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,163 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navigation = [
+  { name: 'Startseite', href: '/' },
+  { name: 'Leistungen', href: '/services' },
+  { name: 'Praxis', href: '/practice' },
+  { name: 'Über uns', href: '/about' },
+  { name: 'Kontakt', href: '/contact' },
+];
+
+function isActive(href: string): boolean {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<!-- Desktop Sidebar -->
+<aside class="hidden lg:flex flex-col fixed left-0 top-0 bottom-0 w-[220px] bg-white/40 backdrop-blur-xl z-50">
+  <div class="flex flex-col h-full">
+    <!-- Logo -->
+    <div class="px-6 pt-8 pb-4">
+      <a href="/" class="flex items-center gap-3">
+        <svg class="w-8 h-8 text-primary flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 4.363C9 2.732 3 1.23 3 8.277c0 5.492 1.188 9.756 3.005 12.141c.645.847 2.216.584 2.888-.265a1.2 1.2 0 0 0 .174-.328l1.063-2.8c.654-1.72 3.086-1.72 3.74 0l1.063 2.8c.045.116.097.23.174.328c.672.85 2.243 1.112 2.888.265C19.812 18.033 21 13.77 21 8.277c0-7.046-6-5.545-9-3.914m0 0L15 6" />
+        </svg>
+        <div class="text-sm font-medium text-charcoal leading-tight">
+          <div>Zahnarztpraxis</div>
+          <div class="text-xs text-stone">Dr. Herrmann-Flechtenmacher</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex-1 flex flex-col justify-center overflow-y-auto px-4">
+      <div class="space-y-0.5">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'block px-3 py-2.5 rounded-lg text-[13px] font-medium tracking-wider transition-colors',
+              isActive(item.href)
+                ? 'text-charcoal bg-white/50'
+                : 'text-stone hover:text-charcoal hover:bg-white/30',
+            ]}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </nav>
+
+    <!-- Bottom spacer -->
+    <div class="px-4 pb-6 pt-4 border-t border-white/30 mt-auto">
+    </div>
+  </div>
+</aside>
+
+<!-- Desktop buttons — fixed top right -->
+<div class="hidden lg:flex items-center gap-3 fixed top-5 right-8 z-50">
+  <a
+    href="/#find-us"
+    class="text-sm font-medium text-charcoal/70 hover:text-charcoal transition-colors px-5 py-2.5 rounded-full border border-black/10 hover:bg-black/5"
+  >
+    So finden Sie uns
+  </a>
+  <a
+    href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-sm font-medium bg-charcoal text-cream hover:bg-charcoal-light transition-colors px-5 py-2.5 rounded-full"
+  >
+    Termin buchen
+  </a>
+</div>
+
+<!-- Mobile Header Bar -->
+<header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-black/5">
+  <div class="flex items-center justify-between px-5 h-16">
+    <button
+      data-menu-toggle
+      class="p-2 -ml-2 text-charcoal/70 hover:text-charcoal"
+      aria-label="Menü öffnen"
+    >
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+    <a href="/" class="flex items-center gap-2">
+      <svg class="w-6 h-6 text-primary flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4.363C9 2.732 3 1.23 3 8.277c0 5.492 1.188 9.756 3.005 12.141c.645.847 2.216.584 2.888-.265a1.2 1.2 0 0 0 .174-.328l1.063-2.8c.654-1.72 3.086-1.72 3.74 0l1.063 2.8c.045.116.097.23.174.328c.672.85 2.243 1.112 2.888.265C19.812 18.033 21 13.77 21 8.277c0-7.046-6-5.545-9-3.914m0 0L15 6" />
+      </svg>
+      <div class="text-base font-medium text-charcoal leading-tight">
+        <div>Zahnarztpraxis</div>
+        <div class="text-xs text-stone">Dr. Herrmann-Flechtenmacher</div>
+      </div>
+    </a>
+    <div class="flex items-center gap-2">
+      <a
+        href="/#find-us"
+        class="hidden sm:inline-block text-xs font-medium text-charcoal/70 px-3 py-1.5 rounded-full border border-black/10 hover:bg-black/5 transition-colors"
+      >
+        So finden Sie uns
+      </a>
+      <a
+        href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-xs font-medium bg-charcoal text-cream px-3 py-1.5 rounded-full hover:bg-charcoal-light transition-colors"
+      >
+        Termin buchen
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Sidebar Overlay (hidden by default, toggled by JS) -->
+<div data-mobile-sidebar class="lg:hidden fixed inset-0 z-50 hidden">
+  <div data-sidebar-overlay class="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+  <aside class="absolute left-0 top-0 bottom-0 w-[280px] bg-white/90 backdrop-blur-xl animate-sidebar-in">
+    <div class="flex flex-col h-full">
+      <!-- Logo -->
+      <div class="px-6 pt-8 pb-4">
+        <a href="/" class="flex items-center gap-3">
+          <svg class="w-8 h-8 text-primary flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 4.363C9 2.732 3 1.23 3 8.277c0 5.492 1.188 9.756 3.005 12.141c.645.847 2.216.584 2.888-.265a1.2 1.2 0 0 0 .174-.328l1.063-2.8c.654-1.72 3.086-1.72 3.74 0l1.063 2.8c.045.116.097.23.174.328c.672.85 2.243 1.112 2.888.265C19.812 18.033 21 13.77 21 8.277c0-7.046-6-5.545-9-3.914m0 0L15 6" />
+          </svg>
+          <div class="text-sm font-medium text-charcoal leading-tight">
+            <div>Zahnarztpraxis</div>
+            <div class="text-xs text-stone">Dr. Herrmann-Flechtenmacher</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex-1 flex flex-col justify-center overflow-y-auto px-4">
+        <div class="space-y-0.5">
+          {navigation.map((item) => (
+            <a
+              href={item.href}
+              class:list={[
+                'block px-3 py-2.5 rounded-lg text-[13px] font-medium tracking-wider transition-colors',
+                isActive(item.href)
+                  ? 'text-charcoal bg-white/50'
+                  : 'text-stone hover:text-charcoal hover:bg-white/30',
+              ]}
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </nav>
+
+      <!-- Bottom spacer -->
+      <div class="px-4 pb-6 pt-4 border-t border-white/30 mt-auto">
+      </div>
+    </div>
+  </aside>
+</div>

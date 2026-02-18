@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+
+const benefits = [
+  { title: 'Biokompatible Materialien', description: 'Hochwertige Komposite und Keramiken für langlebige, ästhetische Füllungen' },
+  { title: 'Zahnerhaltung', description: 'Minimalinvasive Behandlung zum Erhalt möglichst viel gesunder Zahnsubstanz' },
+  { title: 'Natürliches Aussehen', description: 'Zahnfarbene Füllungen für ein perfektes ästhetisches Ergebnis' },
+  { title: 'Langlebigkeit', description: 'Moderne Füllungsmaterialien für eine hohe Haltbarkeit und Stabilität' },
+];
+
+const faqs = [
+  { question: 'Welche Füllungsmaterialien verwenden Sie?', answer: 'Wir verwenden hochwertige Komposite (Kunststofffüllungen) und Keramik-Inlays. Beide Materialien sind biokompatibel, zahnfarben und sehr langlebig.' },
+  { question: 'Sind Kompositfüllungen haltbar?', answer: 'Ja, moderne Kompositfüllungen sind sehr haltbar und können bei guter Pflege viele Jahre halten. Sie sind eine ausgezeichnete Alternative zu Amalgam.' },
+  { question: 'Was ist der Unterschied zwischen Füllung und Inlay?', answer: 'Füllungen werden direkt im Mund modelliert, während Inlays laborgefertigt sind. Inlays aus Keramik sind besonders stabil und langlebig, aber auch etwas aufwendiger.' },
+];
+---
+
+<BaseLayout
+  title="Füllungen | Zahnarztpraxis Dr. Herrmann-Flechtenmacher"
+  description="Hochwertige Zahnfüllungen mit biokompatiblen Materialien in Heidelberg. Komposite und Keramik-Inlays für natürliche Ästhetik."
+>
+  <!-- Hero Section -->
+  <section class="bg-white/50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+      <a href="/services" class="inline-flex items-center gap-2 text-sm text-stone hover:text-charcoal transition-colors mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+        Zurück zu Leistungen
+      </a>
+      <h1 class="text-4xl font-medium text-charcoal max-w-5xl">Füllungen</h1>
+      <p class="mt-6 text-lg text-stone max-w-2xl">
+        Zahnerhaltung mit hochwertigen, biokompatiblen Materialien für ein natürliches, ästhetisches Ergebnis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-8">
+      <div class="rounded-2xl overflow-hidden aspect-[21/9] bg-gradient-to-br from-primary/20 to-secondary/20">
+        <img src="/images/zahnerhaltung.jpg" alt="Füllungen" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Vorteile moderner Füllungen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 rounded-2xl bg-white/40 backdrop-blur-sm">
+            <h3 class="text-lg font-medium text-charcoal mb-2">{benefit.title}</h3>
+            <p class="text-stone text-sm leading-relaxed">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Häufige Fragen</h2>
+      <FaqAccordion faqs={faqs} />
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <div class="rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-medium text-charcoal">Termin vereinbaren</h2>
+        <p class="mt-4 text-stone max-w-2xl mx-auto">
+          Lassen Sie sich beraten - wir finden gemeinsam die beste Lösung für Ihre Zahngesundheit.
+        </p>
+        <div class="mt-8">
+          <a href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors">
+            Online Termin buchen
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

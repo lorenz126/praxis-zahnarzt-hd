@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+
+const benefits = [
+  { title: 'Zahnfleischbehandlung', description: 'Professionelle Behandlung von Zahnfleischentzündungen und Parodontitis' },
+  { title: 'DOXY-GEL Medikation', description: 'Moderne medikamentöse Therapie für effektive Behandlungsergebnisse' },
+  { title: 'Laser-Therapie', description: 'Schonende Behandlung mit dem Dentallaser für bessere Heilung' },
+  { title: 'Langzeitbetreuung', description: 'Regelmäßige Nachsorge und Recall zur Sicherung des Behandlungserfolgs' },
+];
+
+const faqs = [
+  { question: 'Was ist Parodontitis?', answer: 'Parodontitis ist eine bakterielle Entzündung des Zahnhalteapparats, die unbehandelt zum Zahnverlust führen kann. Sie ist die häufigste Ursache für Zahnverlust im Erwachsenenalter.' },
+  { question: 'Wie erkenne ich Parodontitis?', answer: 'Typische Anzeichen sind Zahnfleischbluten, Zahnfleischrückgang, Mundgeruch und lockere Zähne. Bei Verdacht sollten Sie zeitnah einen Termin vereinbaren.' },
+  { question: 'Ist Parodontitis heilbar?', answer: 'Ja, mit professioneller Behandlung und konsequenter häuslicher Mundhygiene kann Parodontitis gestoppt werden. Regelmäßige Nachkontrollen sind wichtig.' },
+];
+---
+
+<BaseLayout
+  title="Parodontologie | Zahnarztpraxis Dr. Herrmann-Flechtenmacher"
+  description="Parodontitis-Behandlung in Heidelberg. Laser-Therapie, DOXY-GEL Medikation und Langzeitbetreuung für gesundes Zahnfleisch."
+>
+  <!-- Hero Section -->
+  <section class="bg-white/50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+      <a href="/services" class="inline-flex items-center gap-2 text-sm text-stone hover:text-charcoal transition-colors mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+        Zurück zu Leistungen
+      </a>
+      <h1 class="text-4xl font-medium text-charcoal max-w-5xl">Parodontologie</h1>
+      <p class="mt-6 text-lg text-stone max-w-2xl">
+        Professionelle Behandlung von Zahnfleischerkrankungen - mit modernster Laser-Therapie und medikamentöser Unterstützung.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-8">
+      <div class="rounded-2xl overflow-hidden aspect-[21/9] bg-gradient-to-br from-primary/20 to-secondary/20">
+        <img src="/images/parodontologie.jpg" alt="Parodontologie" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Unsere Parodontologie-Leistungen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 rounded-2xl bg-white/40 backdrop-blur-sm">
+            <h3 class="text-lg font-medium text-charcoal mb-2">{benefit.title}</h3>
+            <p class="text-stone text-sm leading-relaxed">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Häufige Fragen</h2>
+      <FaqAccordion faqs={faqs} />
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <div class="rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-medium text-charcoal">Parodontitis-Check vereinbaren</h2>
+        <p class="mt-4 text-stone max-w-2xl mx-auto">
+          Früherkennung ist wichtig - lassen Sie Ihr Zahnfleisch untersuchen.
+        </p>
+        <div class="mt-8">
+          <a href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors">
+            Online Termin buchen
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

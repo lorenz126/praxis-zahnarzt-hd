@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+
+const faqs = [
+  {
+    question: 'Wie erreiche ich die Praxis mit öffentlichen Verkehrsmitteln?',
+    answer: 'Unsere Praxis ist sehr gut mit öffentlichen Verkehrsmitteln erreichbar. Die nächste Haltestelle ist Pfaffengrund/Telekom. Parkplätze sind direkt vor dem Haus vorhanden, auch Behindertenparkplätze stehen zur Verfügung.',
+  },
+  {
+    question: 'Wie oft sollte ich zur Prophylaxe kommen?',
+    answer: 'Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate. Bei erhöhtem Kariesrisiko oder Parodontitis kann eine häufigere Prophylaxe sinnvoll sein. Wir beraten Sie gerne individuell.',
+  },
+  {
+    question: 'Was ist CEREC® und welche Vorteile bietet es?',
+    answer: 'CEREC® ist ein computergestütztes System zur Herstellung von Keramik-Zahnersatz. Der große Vorteil: Kronen, Inlays und Brücken können oft in nur einer Sitzung gefertigt werden - ohne Provisorium und ohne zweiten Termin.',
+  },
+  {
+    question: 'Wie kann ich einen Termin vereinbaren?',
+    answer: 'Sie können telefonisch unter 06221-6184010 einen Termin vereinbaren oder bequem unser Online-Buchungsportal nutzen. Für Notfälle außerhalb der Sprechzeiten wenden Sie sich bitte an den zahnärztlichen Notdienst unter 01805-607011.',
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Zahnarztpraxis Dr. Herrmann-Flechtenmacher",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Franz-Knauff-Straße 2-4",
+    "addressLocality": "Heidelberg",
+    "postalCode": "69115",
+    "addressCountry": "DE"
+  },
+  "telephone": "+49-6221-6184010",
+  "email": "info@heidelberg-zahnmedizin.de",
+  "url": "https://heidelberg-zahnmedizin.de",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:00", "closes": "16:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:00", "closes": "16:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "14:00" },
+  ],
+  "image": "https://heidelberg-zahnmedizin.de/images/team-photo.png"
+};
+---
+
+<BaseLayout
+  title="Zahnarztpraxis Dr. Herrmann-Flechtenmacher | Heidelberg"
+  description="Moderne Zahnmedizin mit persönlicher Betreuung in Heidelberg. Prophylaxe, CEREC, Implantologie, Parodontologie und mehr. Jetzt Termin buchen."
+  structuredData={structuredData}
+>
+  <!-- 1. Hero -->
+  <section class="bg-white/50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+      <h1 class="text-4xl font-medium text-charcoal max-w-5xl">
+        Gesunde Zähne ein Leben lang
+      </h1>
+      <p class="mt-6 text-lg text-stone max-w-2xl">
+        Herzlich willkommen in unserer Zahnarztpraxis im Ärztehaus West - mitten im Herzen von Heidelberg. Wir bieten Ihnen moderne Zahnmedizin mit persönlicher Betreuung in angenehmer Atmosphäre.
+      </p>
+    </div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pb-14 sm:pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-4">
+        <!-- Left — hero image -->
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
+          <img src="/images/heidelberg.png" alt="Zahnarztpraxis in Heidelberg" class="w-full h-full object-cover aspect-[16/9] lg:aspect-auto lg:min-h-[400px]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8 sm:p-12">
+            <a
+              href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-white text-charcoal px-6 py-3 rounded-full font-medium text-sm hover:gap-3 transition-all"
+            >
+              Termin buchen
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="hidden lg:flex flex-col gap-4">
+          <!-- Team photo card -->
+          <a href="/about#team" class="group relative rounded-2xl overflow-hidden flex-1 min-h-0">
+            <img src="/images/team-photo.png" alt="Unser Team" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <p class="text-white font-medium">Unser Team</p>
+              <p class="text-white/60 text-sm mt-1">Erfahren und einfühlsam</p>
+            </div>
+          </a>
+
+          <!-- Service card -->
+          <a href="/services" class="group rounded-2xl bg-cream-dark/50 backdrop-blur-sm p-6 flex flex-col justify-end min-h-[130px] hover:bg-sand/30 transition-colors">
+            <p class="text-charcoal font-medium">Unsere Leistungen</p>
+            <span class="mt-1 text-stone text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              Mehr erfahren
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Key Services -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-2">Unsere Schwerpunkte</h2>
+      <p class="text-stone mb-12">Moderne Zahnmedizin für Ihre Gesundheit</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/services/prevention" class="group">
+          <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/prophylaxe.jpg" alt="Prophylaxe & Vorsorge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="mt-3 inline-block text-xs font-medium text-charcoal/50 uppercase tracking-wider">Prävention</span>
+          <h3 class="mt-1 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Prophylaxe & Vorsorge</h3>
+          <p class="mt-1.5 text-sm text-stone">Langfristige Zahngesundheit für Kinder, Jugendliche und Erwachsene in freundlicher Atmosphäre</p>
+        </a>
+
+        <a href="/services/periodontology" class="group">
+          <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/parodontologie.jpg" alt="Parodontologie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="mt-3 inline-block text-xs font-medium text-charcoal/50 uppercase tracking-wider">Zahnfleischbehandlung</span>
+          <h3 class="mt-1 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Parodontologie</h3>
+          <p class="mt-1.5 text-sm text-stone">Erfahrene Behandlung von Zahnfleischerkrankungen mit modernen Methoden</p>
+        </a>
+
+        <a href="/services/prosthodontics" class="group">
+          <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/prothetik.jpg" alt="CEREC® Keramik-Rekonstruktion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <span class="mt-3 inline-block text-xs font-medium text-charcoal/50 uppercase tracking-wider">Modernste Technologie</span>
+          <h3 class="mt-1 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">CEREC® Keramik-Rekonstruktion</h3>
+          <p class="mt-1.5 text-sm text-stone">Kronen, Inlays, Brücken, Veneers und Implantatkomponenten - seit 2011 in unserer Praxis</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Weitere Leistungen -->
+  <section class="bg-white/65 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <div class="flex items-baseline justify-between mb-12">
+        <h2 class="text-2xl font-medium text-charcoal">Weitere Leistungen</h2>
+        <a href="/services" class="text-sm font-medium text-stone hover:text-charcoal transition-colors inline-flex items-center gap-1.5 hover:gap-2.5">
+          Alle Leistungen
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="/services/fillings" class="group">
+          <div class="relative aspect-square rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/zahnerhaltung.jpg" alt="Füllungen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="mt-4 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Füllungen</h3>
+          <p class="mt-1.5 text-sm text-stone">Biokompatible Materialien</p>
+        </a>
+
+        <a href="/services/endodontics" class="group">
+          <div class="relative aspect-square rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/endotontie.jpg" alt="Wurzelbehandlung" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="mt-4 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Wurzelbehandlung</h3>
+          <p class="mt-1.5 text-sm text-stone">Schonende Endodontie</p>
+        </a>
+
+        <a href="/services/implantology" class="group">
+          <div class="relative aspect-square rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/implantologie.jpg" alt="Implantologie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="mt-4 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Implantologie</h3>
+          <p class="mt-1.5 text-sm text-stone">3D-geführte Implantate</p>
+        </a>
+
+        <a href="/services/aesthetics" class="group">
+          <div class="relative aspect-square rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow duration-300">
+            <img src="/images/bleaching.jpg" alt="Zahnästhetik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="mt-4 text-base font-medium text-charcoal leading-snug group-hover:text-primary transition-colors">Zahnästhetik</h3>
+          <p class="mt-1.5 text-sm text-stone">Bleaching & Veneers</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Find Us -->
+  <section id="find-us" class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-4">So finden Sie uns</h2>
+      <p class="text-charcoal-light mb-12">Mitten im Herzen von Heidelberg - gut erreichbar mit Auto und ÖPNV</p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Left — Map -->
+        <div>
+          <div class="rounded-2xl overflow-hidden aspect-[4/3]">
+            <iframe
+              title="Zahnarztpraxis Heidelberg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.1!2d8.6519!3d49.3854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c1234abcdef%3A0x123456789!2sFranz-Knauff-Stra%C3%9Fe+2-4%2C+69115+Heidelberg!5e0!3m2!1sde!2sde!4v1700000000000"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="mt-4">
+            <p class="text-charcoal font-medium">Zahnarztpraxis Dr. Herrmann-Flechtenmacher</p>
+            <p class="text-stone text-sm mt-1">
+              Franz-Knauff-Straße 2-4<br />
+              69115 Heidelberg<br />
+              Ärztehaus HD-West, 4. Stock
+            </p>
+            <p class="text-stone text-sm mt-3 font-medium">Sprechzeiten:</p>
+            <p class="text-stone text-sm">
+              Mo, Mi: 8:00 - 16:00 Uhr<br />
+              Di: 9:00 - 18:00 Uhr<br />
+              Do: 10:00 - 19:00 Uhr<br />
+              Fr: 8:00 - 14:00 Uhr
+            </p>
+            <p class="text-stone/60 text-xs mt-2">Termine nach Vereinbarung</p>
+          </div>
+        </div>
+
+        <!-- Right — Contact & Info -->
+        <div class="space-y-4">
+          <div class="p-6 bg-white/40 backdrop-blur-sm rounded-2xl">
+            <h3 class="text-lg font-medium text-charcoal mb-4">Kontakt</h3>
+            <div class="space-y-2 text-sm text-stone">
+              <p>
+                <span class="font-medium text-charcoal">Telefon:</span><br />
+                <a href="tel:062216184010" class="text-primary hover:underline">06221 - 6184010</a>
+              </p>
+              <p>
+                <span class="font-medium text-charcoal">E-Mail:</span><br />
+                <a href="mailto:info@heidelberg-zahnmedizin.de" class="text-primary hover:underline">info@heidelberg-zahnmedizin.de</a>
+              </p>
+              <p class="pt-2">
+                <a
+                  href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full font-medium text-sm hover:bg-primary-dark transition-colors"
+                >
+                  Online Termin buchen
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 bg-white/40 backdrop-blur-sm rounded-2xl">
+            <h3 class="text-lg font-medium text-charcoal mb-4">Anfahrt</h3>
+            <div class="space-y-2 text-sm text-stone">
+              <p>
+                <span class="font-medium text-charcoal">Mit dem Auto:</span><br />
+                Parkplätze vor dem Haus vorhanden<br />
+                Behindertenparkplätze verfügbar
+              </p>
+              <p>
+                <span class="font-medium text-charcoal">Mit dem ÖPNV:</span><br />
+                Haltestelle Pfaffengrund/Telekom<br />
+                Barrierefreier Zugang mit Aufzug
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ -->
+  <section class="bg-white/70 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Häufige Fragen</h2>
+      <div class="max-w-7xl">
+        <FaqAccordion faqs={faqs} />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

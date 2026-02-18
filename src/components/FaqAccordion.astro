@@ -1,0 +1,38 @@
+---
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FaqItem[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<div class="max-w-3xl divide-y divide-sand">
+  {faqs.map((item) => (
+    <details class="group">
+      <summary class="w-full flex items-center justify-between py-5 text-left cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+        <span class="text-charcoal font-medium pr-8 group-hover:text-black transition-colors">
+          {item.question}
+        </span>
+        <svg
+          class="w-5 h-5 text-stone shrink-0 transition-transform duration-200 group-open:rotate-45"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>
+      </summary>
+      <div class="pb-5">
+        <p class="text-charcoal-light text-sm leading-relaxed pr-12">
+          {item.answer}
+        </p>
+      </div>
+    </details>
+  ))}
+</div>

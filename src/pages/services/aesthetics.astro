@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+
+const benefits = [
+  { title: 'Professionelles Bleaching', description: 'Schonende Zahnaufhellung für ein strahlendes, weißes Lächeln' },
+  { title: 'Ästhetische Rekonstruktionen', description: 'Korrektur von Zahnfehlstellungen, Verfärbungen und Zahnlücken' },
+  { title: 'Veneers', description: 'Vollkeramische Verblendschalen für perfekte Frontzähne' },
+  { title: 'Natürliche Ergebnisse', description: 'Harmonische, natürlich wirkende Ergebnisse für Ihr schönstes Lächeln' },
+];
+
+const faqs = [
+  { question: 'Ist Bleaching schädlich für die Zähne?', answer: 'Nein, professionelles Bleaching unter zahnärztlicher Aufsicht ist sicher und schädigt den Zahnschmelz nicht. Wir verwenden hochwertige, geprüfte Bleaching-Systeme.' },
+  { question: 'Wie lange hält ein Bleaching?', answer: 'Die Aufhellung hält je nach Lebensgewohnheiten (Kaffee, Tee, Rauchen) 1-3 Jahre. Mit guter Mundhygiene und gelegentlichen Auffrischungen können Sie das Ergebnis lange erhalten.' },
+  { question: 'Was kosten ästhetische Behandlungen?', answer: 'Die Kosten variieren je nach Behandlung. Bleaching ab ca. 300\u20AC, Veneers ab ca. 800\u20AC pro Zahn. Wir erstellen Ihnen gerne einen individuellen Kostenplan.' },
+];
+---
+
+<BaseLayout
+  title="Zahnästhetik | Zahnarztpraxis Dr. Herrmann-Flechtenmacher"
+  description="Ästhetische Zahnbehandlung in Heidelberg. Professionelles Bleaching, Veneers und ästhetische Rekonstruktionen für Ihr perfektes Lächeln."
+>
+  <!-- Hero Section -->
+  <section class="bg-white/50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+      <a href="/services" class="inline-flex items-center gap-2 text-sm text-stone hover:text-charcoal transition-colors mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+        Zurück zu Leistungen
+      </a>
+      <h1 class="text-4xl font-medium text-charcoal max-w-5xl">Zahnästhetik</h1>
+      <p class="mt-6 text-lg text-stone max-w-2xl">
+        Professionelle ästhetische Zahnbehandlung - von Bleaching bis zu vollkeramischen Veneers für Ihr perfektes Lächeln.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-8">
+      <div class="rounded-2xl overflow-hidden aspect-[21/9] bg-gradient-to-br from-primary/20 to-secondary/20">
+        <img src="/images/bleaching.jpg" alt="Zahnästhetik" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Ästhetische Leistungen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 rounded-2xl bg-white/40 backdrop-blur-sm">
+            <h3 class="text-lg font-medium text-charcoal mb-2">{benefit.title}</h3>
+            <p class="text-stone text-sm leading-relaxed">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Häufige Fragen</h2>
+      <FaqAccordion faqs={faqs} />
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <div class="rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-medium text-charcoal">Ästhetik-Beratung vereinbaren</h2>
+        <p class="mt-4 text-stone max-w-2xl mx-auto">
+          Lassen Sie sich zu Ihren Möglichkeiten für ein strahlendes Lächeln beraten.
+        </p>
+        <div class="mt-8">
+          <a href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors">
+            Online Termin buchen
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

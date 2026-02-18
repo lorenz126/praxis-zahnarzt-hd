@@ -1,0 +1,94 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  structuredData?: object;
+}
+
+const { title, description, ogImage, structuredData } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:locale" content="de_DE" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  {structuredData && (
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  )}
+</head>
+<body>
+  <div class="min-h-screen relative">
+    <!-- Ambient mesh background -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+      <div class="absolute w-[90vw] h-[90vw] lg:w-[60vw] lg:h-[60vw] rounded-full bg-slate-400/[0.20] lg:bg-slate-400/[0.15] blur-[80px] lg:blur-[120px] animate-blob-1 top-[-10%] left-[-10%]"></div>
+      <div class="absolute w-[80vw] h-[80vw] lg:w-[50vw] lg:h-[50vw] rounded-full bg-blue-400/[0.20] lg:bg-blue-400/[0.15] blur-[80px] lg:blur-[120px] animate-blob-2 top-[30%] right-[-15%]"></div>
+      <div class="absolute w-[85vw] h-[85vw] lg:w-[55vw] lg:h-[55vw] rounded-full bg-gray-400/[0.20] lg:bg-gray-400/[0.15] blur-[80px] lg:blur-[120px] animate-blob-3 bottom-[-10%] left-[20%]"></div>
+    </div>
+    <Header currentPath={Astro.url.pathname} />
+    <div class="lg:ml-[219px]">
+      <div class="h-16 lg:h-0"></div>
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('[data-menu-toggle]');
+      const sidebar = document.querySelector('[data-mobile-sidebar]');
+      const overlay = document.querySelector('[data-sidebar-overlay]');
+
+      if (!toggle || !sidebar) return;
+
+      function closeSidebar() {
+        sidebar!.classList.add('hidden');
+        overlay?.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      function openSidebar() {
+        sidebar!.classList.remove('hidden');
+        overlay?.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      toggle.addEventListener('click', () => {
+        sidebar!.classList.contains('hidden') ? openSidebar() : closeSidebar();
+      });
+
+      overlay?.addEventListener('click', closeSidebar);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+
+const benefits = [
+  { title: 'Professionelle Zahnreinigung', description: 'Entfernung von Zahnstein und Verfärbungen für gesunde, saubere Zähne' },
+  { title: 'Schwangerschaftsprophylaxe', description: 'Spezielle Vorsorge für werdende Mütter zur Vermeidung von Schwangerschaftsgingivitis' },
+  { title: 'Schmelzhärtung', description: 'Fluoridierung zur Stärkung des Zahnschmelzes und Kariesprävention' },
+  { title: 'Speicheltest', description: 'Analyse Ihres individuellen Kariesrisikos für maßgeschneiderte Prophylaxe' },
+];
+
+const process = [
+  { step: '1', title: 'Eingangsuntersuchung', description: 'Umfassende Untersuchung Ihrer Zähne und des Zahnfleisches' },
+  { step: '2', title: 'Professionelle Reinigung', description: 'Schonende Entfernung von Zahnstein, Belägen und Verfärbungen' },
+  { step: '3', title: 'Politur & Fluoridierung', description: 'Glättung der Zahnoberflächen und Schmelzhärtung' },
+  { step: '4', title: 'Beratung', description: 'Individuelle Tipps für Ihre häusliche Mundhygiene und Ernährung' },
+];
+
+const faqs = [
+  { question: 'Wie oft sollte ich zur professionellen Zahnreinigung?', answer: 'Wir empfehlen eine professionelle Zahnreinigung alle 6 Monate. Bei erhöhtem Kariesrisiko oder Parodontitis kann eine häufigere Prophylaxe sinnvoll sein.' },
+  { question: 'Übernimmt die Krankenkasse die Kosten?', answer: 'Viele gesetzliche Krankenkassen bezuschussen die professionelle Zahnreinigung. Private Versicherungen übernehmen die Kosten oft vollständig. Wir beraten Sie gerne zu den Möglichkeiten.' },
+  { question: 'Ist die Behandlung schmerzhaft?', answer: 'Die professionelle Zahnreinigung ist in der Regel schmerzfrei. Bei empfindlichen Zähnen oder freiliegenden Zahnhälsen kann eine lokale Betäubung eingesetzt werden.' },
+  { question: 'Was ist eine Schwangerschaftsprophylaxe?', answer: 'Während der Schwangerschaft erhöht sich durch Hormonveränderungen das Risiko für Zahnfleischentzündungen. Unsere spezielle Schwangerschaftsprophylaxe beugt dem vor und schützt Mutter und Kind.' },
+];
+---
+
+<BaseLayout
+  title="Prophylaxe & Vorsorge | Zahnarztpraxis Dr. Herrmann-Flechtenmacher"
+  description="Professionelle Zahnreinigung und Prophylaxe in Heidelberg. Schwangerschaftsprophylaxe, Fluoridierung und individuelle Vorsorge für gesunde Zähne."
+>
+  <!-- Hero Section -->
+  <section class="bg-white/50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 pt-16 sm:pt-24 pb-12 sm:pb-16">
+      <a href="/services" class="inline-flex items-center gap-2 text-sm text-stone hover:text-charcoal transition-colors mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+        Zurück zu Leistungen
+      </a>
+      <h1 class="text-4xl font-medium text-charcoal max-w-5xl">Prophylaxe & Vorsorge</h1>
+      <p class="mt-6 text-lg text-stone max-w-2xl">
+        Vorbeugen ist besser als Heilen - mit professioneller Prophylaxe halten Sie Ihre Zähne ein Leben lang gesund.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-8">
+      <div class="rounded-2xl overflow-hidden aspect-[21/9] bg-gradient-to-br from-primary/20 to-secondary/20">
+        <img src="/images/prophylaxe.jpg" alt="Prophylaxe & Vorsorge" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Unsere Prophylaxe-Leistungen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 rounded-2xl bg-white/40 backdrop-blur-sm">
+            <h3 class="text-lg font-medium text-charcoal mb-2">{benefit.title}</h3>
+            <p class="text-stone text-sm leading-relaxed">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Ablauf der Prophylaxe</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {process.map((item) => (
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <span class="text-primary font-medium text-lg">{item.step}</span>
+              </div>
+            </div>
+            <h3 class="text-base font-medium text-charcoal mb-2">{item.title}</h3>
+            <p class="text-stone text-sm leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white/60 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <h2 class="text-2xl font-medium text-charcoal mb-12">Häufige Fragen</h2>
+      <FaqAccordion faqs={faqs} />
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-white/55 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:pl-6 lg:pr-12 py-14 sm:py-20">
+      <div class="rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 p-8 sm:p-12 text-center">
+        <h2 class="text-2xl sm:text-3xl font-medium text-charcoal">Jetzt Prophylaxe-Termin vereinbaren</h2>
+        <p class="mt-4 text-stone max-w-2xl mx-auto">
+          Investieren Sie in Ihre Zahngesundheit - vereinbaren Sie noch heute einen Termin für Ihre professionelle Zahnreinigung.
+        </p>
+        <div class="mt-8">
+          <a href="https://heidelberg-zahnmedizin.termin.dampsoft.net/patientenportal/suche" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition-colors">
+            Online Termin buchen
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

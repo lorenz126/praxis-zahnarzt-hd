@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heidelberg-zahnmedizin.de/sitemap-index.xml
